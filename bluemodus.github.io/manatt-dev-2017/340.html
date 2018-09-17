@@ -1,0 +1,215 @@
+﻿
+<!DOCTYPE html>
+<!-- ttps://healthbrand.herokuapp.com/bluemodus.github.io/manatt-dev-2017/data-visual.html -->
+<html lang="en" class="mti-inactive">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><
+
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link href="./Data Visual_files/main.css.download" rel="stylesheet">
+    <script src="./Data Visual_files/jquery.min.js.download"></script>
+    <script src="./Data Visual_files/popper.min.js.download"></script>
+    <script src="./Data Visual_files/frontEnd.js.download"></script>
+    <script src="./Data Visual_files/util.js.download"></script>
+    <script src="./Data Visual_files/collapse.js.download"></script>
+    <script src="./Data Visual_files/carousel.js.download"></script>
+    <script src="./Data Visual_files/tooltip.js.download"></script>
+    <script src="./Data Visual_files/jQuery.succinct.min.js.download"></script>
+    <script src="./Data Visual_files/picker.js.download"></script>
+    <script src="./Data Visual_files/picker.date.js.download"></script>
+    <script src="./Data Visual_files/mixitup.min.js.download"></script>
+    <script src="./Data Visual_files/select2.full.min.js.download"></script>
+    <script src="./Data Visual_files/waitForFinalEvent.js.download"></script>
+    <script src="./Data Visual_files/retach.js.download"></script>
+    <script src="./Data Visual_files/searchToggle.js.download"></script>
+    <script src="./Data Visual_files/mobileSubToggles.js.download"></script>
+    <script src="./Data Visual_files/pickerChooser.js.download"></script>
+    <script src="./Data Visual_files/tabAccordion.js.download"></script>
+    <script src="./Data Visual_files/a2f2325c-9bbe-4e0d-adcd-6236550cbc77.js.download"></script>
+    <script type="text/javascript" src="./Data Visual_files/mt.js.download"></script>
+    <title>Data Visual</title>
+    <style type="text/css" id="mti_fontface_a2f2325c-9bbe-4e0d-adcd-6236550cbc77">
+        @font-face {
+            font-family: "Clarendon W01";
+            font-style: normal;
+            font-weight: 200;
+            src: url("https://fast.fonts.net/dv2/14/9934a3c5-d3a4-4a28-9e3a-4c7e6f0315b9.woff2?d44f19a684109620e484167dae90e81827f2d90cf81631aefa66d7a2d953e24f66dca5297509a8f71b0c8a486c919c805ac21321dd8161b2113829944dc9b782eea21a04978afa40980b174009bae38fcf8644177d2fb08a81f7b9d150bb8ab44a87b769faf451e446725cd9adb6d67d9aa6d0b84501ab3c41c27ff06c18d475f88d5a719eace27e746c880233e2decd9e50e6ad6eda5b46e4e344bf11b71b866b631cab0796e998b06cc54aad63d560398527f9fd6d2019037183559950ac6a0d0df11a15f0112e5faf53ab69dd847c001cc91340500573d62b95cac8bfab651d6cc6db75ca587bb55f2aa07151234ea8ec7853e1d4dfb65a&projectId=a2f2325c-9bbe-4e0d-adcd-6236550cbc77") format('woff2');
+        }
+
+        @font-face {
+            font-family: "Univers W01";
+            font-style: normal;
+            font-weight: 200;
+            src: url("https://fast.fonts.net/dv2/14/9fa24f1f-00d8-4d28-910f-78e925eaead6.woff2?d44f19a684109620e484167dae90e81827f2d90cf81631aefa66d7a2d953e24f66dca5297509a8f71b0c8a486c919c805ac21321dd8161b2113829944dc9b782eea21a04978afa40980b174009bae38fcf8644177d2fb08a81f7b9d150bb8ab44a87b769faf451e446725cd9adb6d67d9aa6d0b84501ab3c41c27ff06c18d475f88d5a719eace27e746c880233e2decd9e50e6ad6eda5b46e4e344bf11b71b866b631cab0796e998b06cc54aad63d560398527f9fd6d2019037183559950ac6a0d0df11a15f0112e5faf53ab69dd847c001cc91340500573d62b95cac8bfab651d6cc6db75ca587bb55f2aa07151234ea8ec7853e1d4dfb65a&projectId=a2f2325c-9bbe-4e0d-adcd-6236550cbc77") format('woff2');
+        }
+
+        @font-face {
+            font-family: "Univers W01";
+            font-style: italic;
+            font-weight: 400;
+            src: url("https://fast.fonts.net/dv2/14/5bfff3ac-e569-450d-918b-d564434e5e24.woff2?d44f19a684109620e484167dae90e81827f2d90cf81631aefa66d7a2d953e24f66dca5297509a8f71b0c8a486c919c805ac21321dd8161b2113829944dc9b782eea21a04978afa40980b174009bae38fcf8644177d2fb08a81f7b9d150bb8ab44a87b769faf451e446725cd9adb6d67d9aa6d0b84501ab3c41c27ff06c18d475f88d5a719eace27e746c880233e2decd9e50e6ad6eda5b46e4e344bf11b71b866b631cab0796e998b06cc54aad63d560398527f9fd6d2019037183559950ac6a0d0df11a15f0112e5faf53ab69dd847c001cc91340500573d62b95cac8bfab651d6cc6db75ca587bb55f2aa07151234ea8ec7853e1d4dfb65a&projectId=a2f2325c-9bbe-4e0d-adcd-6236550cbc77") format('woff2');
+        }
+
+        @font-face {
+            font-family: "Univers W01";
+            font-style: normal;
+            font-weight: 400;
+            src: url("https://fast.fonts.net/dv2/14/5c8d59c2-9c85-4a22-88e3-bf3fba01dcd8.woff2?d44f19a684109620e484167dae90e81827f2d90cf81631aefa66d7a2d953e24f66dca5297509a8f71b0c8a486c919c805ac21321dd8161b2113829944dc9b782eea21a04978afa40980b174009bae38fcf8644177d2fb08a81f7b9d150bb8ab44a87b769faf451e446725cd9adb6d67d9aa6d0b84501ab3c41c27ff06c18d475f88d5a719eace27e746c880233e2decd9e50e6ad6eda5b46e4e344bf11b71b866b631cab0796e998b06cc54aad63d560398527f9fd6d2019037183559950ac6a0d0df11a15f0112e5faf53ab69dd847c001cc91340500573d62b95cac8bfab651d6cc6db75ca587bb55f2aa07151234ea8ec7853e1d4dfb65a&projectId=a2f2325c-9bbe-4e0d-adcd-6236550cbc77") format('woff2');
+        }
+
+        @font-face {
+            font-family: "Univers W01";
+            font-style: italic;
+            font-weight: 700;
+            src: url("https://fast.fonts.net/dv2/14/cc843e1a-cf1f-47e9-a03f-ef03d2b85d9a.woff2?d44f19a684109620e484167dae90e81827f2d90cf81631aefa66d7a2d953e24f66dca5297509a8f71b0c8a486c919c805ac21321dd8161b2113829944dc9b782eea21a04978afa40980b174009bae38fcf8644177d2fb08a81f7b9d150bb8ab44a87b769faf451e446725cd9adb6d67d9aa6d0b84501ab3c41c27ff06c18d475f88d5a719eace27e746c880233e2decd9e50e6ad6eda5b46e4e344bf11b71b866b631cab0796e998b06cc54aad63d560398527f9fd6d2019037183559950ac6a0d0df11a15f0112e5faf53ab69dd847c001cc91340500573d62b95cac8bfab651d6cc6db75ca587bb55f2aa07151234ea8ec7853e1d4dfb65a&projectId=a2f2325c-9bbe-4e0d-adcd-6236550cbc77") format('woff2');
+        }
+
+        @font-face {
+            font-family: "Univers W01";
+            font-style: normal;
+            font-weight: 700;
+            src: url("https://fast.fonts.net/dv2/14/8a711a0d-3f17-4bfe-887b-6229858332b3.woff2?d44f19a684109620e484167dae90e81827f2d90cf81631aefa66d7a2d953e24f66dca5297509a8f71b0c8a486c919c805ac21321dd8161b2113829944dc9b782eea21a04978afa40980b174009bae38fcf8644177d2fb08a81f7b9d150bb8ab44a87b769faf451e446725cd9adb6d67d9aa6d0b84501ab3c41c27ff06c18d475f88d5a719eace27e746c880233e2decd9e50e6ad6eda5b46e4e344bf11b71b866b631cab0796e998b06cc54aad63d560398527f9fd6d2019037183559950ac6a0d0df11a15f0112e5faf53ab69dd847c001cc91340500573d62b95cac8bfab651d6cc6db75ca587bb55f2aa07151234ea8ec7853e1d4dfb65a&projectId=a2f2325c-9bbe-4e0d-adcd-6236550cbc77") format('woff2');
+        }
+
+        @font-face {
+            font-family: "Univers W01";
+            font-style: normal;
+            font-weight: 800;
+            src: url("https://fast.fonts.net/dv2/14/9d846738-13de-43dd-a3f2-ff53924f926c.woff2?d44f19a684109620e484167dae90e81827f2d90cf81631aefa66d7a2d953e24f66dca5297509a8f71b0c8a486c919c805ac21321dd8161b2113829944dc9b782eea21a04978afa40980b174009bae38fcf8644177d2fb08a81f7b9d150bb8ab44a87b769faf451e446725cd9adb6d67d9aa6d0b84501ab3c41c27ff06c18d475f88d5a719eace27e746c880233e2decd9e50e6ad6eda5b46e4e344bf11b71b866b631cab0796e998b06cc54aad63d560398527f9fd6d2019037183559950ac6a0d0df11a15f0112e5faf53ab69dd847c001cc91340500573d62b95cac8bfab651d6cc6db75ca587bb55f2aa07151234ea8ec7853e1d4dfb65a&projectId=a2f2325c-9bbe-4e0d-adcd-6236550cbc77") format('woff2');
+        }
+    </style>
+    <link id="MonoTypeFontApiFontTracker" type="text/css" rel="stylesheet" href="./Data Visual_files/1.css.download">
+</head>
+<body>
+
+    <div class="headerMain">
+        <div class="container p-0">
+            <nav class="headerMain-navUtil navbar navbar-expand-md justify-content-md-end p-0">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link zmdi-favorite active" href="https://healthbrand.herokuapp.com/bluemodus.github.io/manatt-dev-2017/data-visual.html#">Favorites</a></li>
+                    <li class="nav-item"><a class="nav-link zmdi-account-circle" href="https://healthbrand.herokuapp.com/bluemodus.github.io/manatt-dev-2017/data-visual.html#">Account Info</a></li>
+                    <li class="nav-item"><a class="nav-link zmdi-square-right" href="https://healthbrand.herokuapp.com/bluemodus.github.io/manatt-dev-2017/data-visual.html#">Log Out</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://healthbrand.herokuapp.com/bluemodus.github.io/manatt-dev-2017/data-visual.html#"><img src="./Data Visual_files/manatt-logo.png.download"></a></li>
+                </ul>
+            </nav>
+        </div>
+        <nav class="headerMain-navMain navbar navbar-expand-md navbar-inverse bg-inverse">
+            <div class="container p-0">
+                <a class="headerMain-navToggler navbar-toggler collapsed" href="https://healthbrand.herokuapp.com/bluemodus.github.io/manatt-dev-2017/data-visual.html#" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">Menu<span class="navbar-toggler-icon"></span></a><a class="navbar-brand order-first" href="https://healthbrand.herokuapp.com/bluemodus.github.io/manatt-dev-2017/data-visual.html#"> <img src="./Data Visual_files/logoMain.svg.download"></a>
+                <div class="headerMain-collapse collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="headerMain-navItems navbar-nav ml-auto">
+                        <li class="nav-item active"><a class="nav-link" href="https://healthbrand.herokuapp.com/bluemodus.github.io/manatt-dev-2017/data-visual.html#">Home</a></li>
+                        <li class="nav-item hasChildren">
+                            <a class="nav-link" href="https://healthbrand.herokuapp.com/bluemodus.github.io/manatt-dev-2017/data-visual.html#">Key Topics</a>
+                            <ul class="navbar-subnav">
+                                <li class="nav-item"><a class="nav-link" href="https://healthbrand.herokuapp.com/bluemodus.github.io/manatt-dev-2017/data-visual.html#">Sub Link 01</a></li>
+                                <li class="nav-item"><a class="nav-link" href="https://healthbrand.herokuapp.com/bluemodus.github.io/manatt-dev-2017/data-visual.html#">Sub Link 02</a></li>
+                                <li class="nav-item"><a class="nav-link" href="https://healthbrand.herokuapp.com/bluemodus.github.io/manatt-dev-2017/data-visual.html#">Sub Link 03</a></li>
+                                <li class="nav-item"><a class="nav-link" href="https://healthbrand.herokuapp.com/bluemodus.github.io/manatt-dev-2017/data-visual.html#">Sub Link 04</a></li>
+                                <li class="nav-item"><a class="nav-link" href="https://healthbrand.herokuapp.com/bluemodus.github.io/manatt-dev-2017/data-visual.html#">Sub Link 05</a></li>
+                                <li class="nav-item"><a class="nav-link" href="https://healthbrand.herokuapp.com/bluemodus.github.io/manatt-dev-2017/data-visual.html#">Sub Link 06</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item hasChildren">
+                            <a class="nav-link" href="https://healthbrand.herokuapp.com/bluemodus.github.io/manatt-dev-2017/data-visual.html#">Publications &amp; Events</a>
+                            <ul class="navbar-subnav">
+                                <li class="nav-item"><a class="nav-link" href="https://healthbrand.herokuapp.com/bluemodus.github.io/manatt-dev-2017/data-visual.html#">Sub Link 01</a></li>
+                                <li class="nav-item"><a class="nav-link" href="https://healthbrand.herokuapp.com/bluemodus.github.io/manatt-dev-2017/data-visual.html#">Sub Link 02</a></li>
+                                <li class="nav-item"><a class="nav-link" href="https://healthbrand.herokuapp.com/bluemodus.github.io/manatt-dev-2017/data-visual.html#">Sub Link 03</a></li>
+                                <li class="nav-item"><a class="nav-link" href="https://healthbrand.herokuapp.com/bluemodus.github.io/manatt-dev-2017/data-visual.html#">Sub Link 04</a></li>
+                                <li class="nav-item"><a class="nav-link" href="https://healthbrand.herokuapp.com/bluemodus.github.io/manatt-dev-2017/data-visual.html#">Sub Link 05</a></li>
+                                <li class="nav-item"><a class="nav-link" href="https://healthbrand.herokuapp.com/bluemodus.github.io/manatt-dev-2017/data-visual.html#">Sub Link 06</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item hasChildren">
+                            <a class="nav-link" href="https://healthbrand.herokuapp.com/bluemodus.github.io/manatt-dev-2017/data-visual.html#">Premium Insights</a>
+                            <ul class="navbar-subnav">
+                                <li class="nav-item"><a class="nav-link" href="https://healthbrand.herokuapp.com/bluemodus.github.io/manatt-dev-2017/data-visual.html#">Sub Link 01</a></li>
+                                <li class="nav-item"><a class="nav-link" href="https://healthbrand.herokuapp.com/bluemodus.github.io/manatt-dev-2017/data-visual.html#">Sub Link 02</a></li>
+                                <li class="nav-item"><a class="nav-link" href="https://healthbrand.herokuapp.com/bluemodus.github.io/manatt-dev-2017/data-visual.html#">Sub Link 03</a></li>
+                                <li class="nav-item"><a class="nav-link" href="https://healthbrand.herokuapp.com/bluemodus.github.io/manatt-dev-2017/data-visual.html#">Sub Link 04</a></li>
+                                <li class="nav-item"><a class="nav-link" href="https://healthbrand.herokuapp.com/bluemodus.github.io/manatt-dev-2017/data-visual.html#">Sub Link 05</a></li>
+                                <li class="nav-item"><a class="nav-link" href="https://healthbrand.herokuapp.com/bluemodus.github.io/manatt-dev-2017/data-visual.html#">Sub Link 06</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="https://healthbrand.herokuapp.com/bluemodus.github.io/manatt-dev-2017/data-visual.html#">Analytics</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://healthbrand.herokuapp.com/bluemodus.github.io/manatt-dev-2017/data-visual.html#">People</a></li>
+                    </ul>
+                    <div class="headerMain-search my-3 my-md-0 ml-auto mr-md-2">
+                        <input class="headerMain-searchBox form-control" id="headerMainSearch" type="text" placeholder="Enter Search Terms"><span class="btn btn-primary px-3">Go</span>
+                    </div><span class="headerMain-searchToggler zmdi-search"></span>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="utilityBar">
+        <div class="utilityBar-inner">
+            <ul class="breadcrumb">
+                <li><a href="https://healthbrand.herokuapp.com/bluemodus.github.io/manatt-dev-2017/data-visual.html#">Homepage</a></li>
+                <li><a href="https://healthbrand.herokuapp.com/bluemodus.github.io/manatt-dev-2017/data-visual.html#">Two pages above this</a></li>
+                <li><a href="https://healthbrand.herokuapp.com/bluemodus.github.io/manatt-dev-2017/data-visual.html#">One page above this</a></li>
+                <li>This Page</li>
+            </ul>
+            <div class="social">
+                <div class="social-favorite">
+                    <div class="social-title"> Favorite</div><a class="social-favLink" href="https://healthbrand.herokuapp.com/bluemodus.github.io/manatt-dev-2017/data-visual.html#"></a>
+                </div>
+                <div class="social-title">Share</div>
+                <ul class="social-iconList">
+                    <li><a class="social-iconLink zmdi-linkedin" href="https://healthbrand.herokuapp.com/bluemodus.github.io/manatt-dev-2017/data-visual.html#"></a></li>
+                    <li><a class="social-iconLink zmdi-facebook" href="https://healthbrand.herokuapp.com/bluemodus.github.io/manatt-dev-2017/data-visual.html#"></a></li>
+                    <li><a class="social-iconLink zmdi-twitter" href="https://healthbrand.herokuapp.com/bluemodus.github.io/manatt-dev-2017/data-visual.html#"></a></li>
+                    <li><a class="social-iconLink zmdi-email" href="https://healthbrand.herokuapp.com/bluemodus.github.io/manatt-dev-2017/data-visual.html#"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <main>
+        <div class="container" id="loadData"></div>
+    </main>
+    <footer class="footerMain">
+        <div class="footerMain-inner">
+            <div class="row">
+                <div class="footerMain-col col-md-4">
+                    <a href="https://bluemodus.github.io/"><img class="footerMain-logo" src="./Data Visual_files/logoFooter.svg.download"></a>
+                    <p>Insights @MANATTHEALTH</p>
+                    <p>Information Placeholder Text Area</p>
+                </div>
+                <div class="footerMain-col col-md-4">
+                    <ul class="footerMain-nav">
+                        <li><a href="https://healthbrand.herokuapp.com/bluemodus.github.io/manatt-dev-2017/data-visual.html#">Premium Insights</a></li>
+                        <li><a href="https://healthbrand.herokuapp.com/bluemodus.github.io/manatt-dev-2017/data-visual.html#">Key Topics</a></li>
+                        <li><a href="https://healthbrand.herokuapp.com/bluemodus.github.io/manatt-dev-2017/data-visual.html#">Analytics</a></li>
+                    </ul>
+                </div>
+                <div class="footerMain-col col-md-4">
+                    <ul class="footerMain-nav">
+                        <li><a href="https://healthbrand.herokuapp.com/bluemodus.github.io/manatt-dev-2017/data-visual.html#">People</a></li>
+                        <li><a href="https://healthbrand.herokuapp.com/bluemodus.github.io/manatt-dev-2017/data-visual.html#">Contacts </a></li>
+                        <li><a href="https://healthbrand.herokuapp.com/bluemodus.github.io/manatt-dev-2017/data-visual.html#">Disclaimer</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            var value = "http://dev.paradisetechsoft.com/50-State-Surveys/340B/";
+            jQuery("#loadData").html('<iframe frameBorder="0" scrolling="no" id="dataFrame" height="1200px" width="100%" src="' + value + '"></iframe>');
+            setTimeout(function () {
+                //auto resize
+                //iResize();
+            }, 300);
+            function iResize() {
+                //alert( $( window.parent.document.body ).height() );
+                var heig = jQuery(window.frames[0].document.body).height();
+                // alert(heig);
+                var hei1 = heig + 50;
+                //jQuery("#loadData").height(hei1+'px');
+                jQuery("#dataFrame").height(hei1 + 'px');
+            }
+        </script>
+    </footer>
+</body>
+</html>
